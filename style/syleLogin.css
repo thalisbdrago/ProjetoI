@@ -1,0 +1,18 @@
+body {
+    background-color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    color: #1B1B1B;
+}
+.btn-custom {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: #1B1B1B solid 1px !important;
+}
+
+
+.btn-custom:hover {
+    background-color: #1B1B1B;
+    color: #FFFFFF !important;
+    border: #FFFFFF solid 1px !important;
+}
+

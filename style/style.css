@@ -1,0 +1,17 @@
+*{font-family: 'Montserrat', sans-serif; }
+
+.navbar-custom {
+    background-color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    color: #1B1B1B;
+    
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}

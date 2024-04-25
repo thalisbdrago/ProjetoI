@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            color: #1B1B1B;
+        }
+        .btn-custom {
+            background-color: #FFFFFF;
+            color: #1B1B1B;
+            margin-top: 15px;
+            border: 1px solid #1B1B1B;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/js/registro.js " defer></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom ">
+        <a class="navbar-brand" href="/html/index.html">Joao Bass</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/html/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Aulas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    
+        <div></div>
+    </nav>
+
+<div class="container mt-5">
+    <h2>Registro</h2>
+    <!-- Formulário de Registro -->
+    <form>
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+        </div>
+
+        <div class="form-group">
+            <label for="senha">Confirme senha</label>
+            <input type="password" class="form-control" id="repeatPassword" placeholder="Repita sua senha">
+        </div>
+        <button type="submit" id="btn-register" class="btn btn-custom">Registrar</button>
+    </form>
+    <p>Já tem uma conta? <a href="login.html" style="color: #1B1B1B;">Faça login aqui</a></p>
+</div>
+
+<footer class="footer mt-5" style="background-color: #FAFAFA;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2024 SeuSite. Todos os direitos reservados.</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <a href="#" class="mr-3" style="color: #1B1B1B;">Termos de Serviço</a>
+                <a href="#" class="mr-3" style="color: #1B1B1B;">Política de Privacidade</a>
+                <!-- Ícones de redes sociais -->
+                <a href="#" class="mr-2" style="color: #1B1B1B;"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="mr-2" style="color: #1B1B1B;"><i class="fab fa-facebook"></i></a>
+                <a href="#" style="color: #1B1B1B;"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
