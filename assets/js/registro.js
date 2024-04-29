@@ -30,6 +30,5 @@ btnRegister.addEventListener('click', function (ev) {
     }
     
     
-
 })
 
