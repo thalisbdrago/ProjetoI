@@ -9,9 +9,13 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/syleLogin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="/assets/js/login.js" defer></script>
-
+    <script src="/assets/js/firebaseAuth.js" defer></script>
+    <script src='https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js'></script>
+    <script src='https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js'></script>
+    <script src="/assets/js/loading.js"></script>
 </head>
 <body>
 
@@ -38,8 +42,6 @@
         <div></div>
     </nav>
 
-    <button id="excluir">Excluir local Storage</button>
-
 <div class="container mt-5">
     <h2>Login</h2>
     <!-- Formulário de Login -->
@@ -52,8 +54,12 @@
             <label for="senha">Senha</label>
             <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
         </div>
+
+        <div id='spinnerLoading'>
+        </div>
         <button  id="btn-login" class="btn btn-custom">Login</button>
     </form>
+
     <p>Não tem uma conta? <a href="/assets/html/registro.html" style="color: #1B1B1B;">Registre-se aqui</a></p>
 </div>
 
@@ -81,6 +87,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>

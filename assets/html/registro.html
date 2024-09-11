@@ -21,6 +21,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src='/assets/js/registro.js' defer></script>
+    <script src='/assets/js/firebaseAuth.js' defer></script>
+    <script src='https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js'></script>
+    <script src='https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js'></script>
+    <script src="/assets/js/loading.js"></script>
+    
 </head>
 <body>
 
@@ -67,6 +72,8 @@
             <label for="senha">Confirme senha</label>
             <input type="password" class="form-control" id="repeatPassword" placeholder="Repita sua senha">
         </div>
+        <div id='spinnerLoading'>
+        </div>
         <button type="submit" id="btn-register" class="btn btn-custom">Registrar</button>
     </form>
     <p>Já tem uma conta? <a href="login.html" style="color: #1B1B1B;">Faça login aqui</a></p>
@@ -90,6 +97,30 @@
     </div>
 </footer>
 
+<script>
+    const firebaseConfig = {
+    apiKey: "AIzaSyCuDGMfDDtNj0PO1BMljG4Aq_w1lvlmEKc",
+    authDomain: "joaomartinsbass-ce075.firebaseapp.com",
+    projectId: "joaomartinsbass-ce075",
+    storageBucket: "joaomartinsbass-ce075.appspot.com",
+    messagingSenderId: "820311723365",
+    appId: "1:820311723365:web:783ef55ce95610e5ac258c",
+    measurementId: "G-WQ19Z6VFQM"
+};
+
+// Initialize Firebase app
+firebase.initializeApp(firebaseConfig);
+
+// Use Firebase authentication to sign in with email and password
+firebase.auth().signInWithEmailAndPassword("thalisbdrago@gmail.com", "14.28.at")
+    .then(response => {
+        console.log("Success:", response);
+    })
+    .catch(error => {
+        console.log("Error:", error);
+    });
+
+</script>
 
 <!-- Bootstrap JS, Popper.js, and jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
